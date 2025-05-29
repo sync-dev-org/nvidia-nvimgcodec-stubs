@@ -9,4 +9,4 @@ from nvidia.nvjpeg import *
 from nvidia.nvjpeg2k import *
 from nvidia.nvtiff import *
 
-__version__ = "0.5.0.13.4"
+__version__ = "0.5.0.13.5"

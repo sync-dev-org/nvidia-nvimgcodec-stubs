@@ -12,7 +12,7 @@ CUDA_VERSIONS=(
 TARGET_VERSIONS=(
     "0.5.0.13"
 )
-POST_VERSION="4"
+POST_VERSION="5"
 
 PY_VERSION="3.12"
 
@@ -76,8 +76,8 @@ for CUDA_VERSION in "${CUDA_VERSIONS[@]}" ; do
 
         deactivate
 
-        twine upload --repository testpypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
-        #twine upload --repository pypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
+        #twine upload --repository testpypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
+        twine upload --repository pypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
 
     done
 

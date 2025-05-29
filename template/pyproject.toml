@@ -49,7 +49,10 @@ include = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
+packages = [
+    "src/nvidia",
+    "src/PROJECT_NAME"
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
