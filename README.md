@@ -97,4 +97,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Related Links
 
 - [NVIDIA nvimgcodec](https://github.com/NVIDIA/nvImageCodec)
-- [GitHub Repository](https://github.com/sync-dev-org/nvidia-nvimgcodec-cu12-stubs)
+- [GitHub Repository](https://github.com/sync-dev-org/nvidia-nvimgcodec-stubs)

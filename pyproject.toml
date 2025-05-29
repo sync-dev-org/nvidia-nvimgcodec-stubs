@@ -1,7 +1,7 @@
 
 [project]
 name = "nvidia-nvimgcodec-cu12-stubs"
-version = "0.5.0.13.1"
+version = "0.5.0.13.4"
 description = "Type stubs for NVIDIA NVIMGCODEC CUDA 12 bindings"
 readme = "README.md"
 license = {file = "LICENSE"}
