@@ -61,8 +61,10 @@ for CUDA_VERSION in "${CUDA_VERSIONS[@]}" ; do
         uv sync --extra dev
 
         if [[ "$OSTYPE" == "msys"* ]]; then
+            echo "Detected Windows OS, using Scripts directory for virtual environment activation"
             source ${VENV_DIR}/Scripts/activate
         else
+            echo "Detected Unix-like OS, using bin directory for virtual environment activation"
             source ${VENV_DIR}/bin/activate
         fi
 
@@ -74,10 +76,10 @@ for CUDA_VERSION in "${CUDA_VERSIONS[@]}" ; do
         python -m pybind11_stubgen nvidia.nvtiff --ignore-all-errors --output-dir src
         uv build
 
-        deactivate
-
         #twine upload --repository testpypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
-        #twine upload --repository pypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
+        twine upload --repository pypi dist/nvidia_nvimgcodec_${CUDA_VERSION}_stubs-${STUBS_VERSION}-py3-none-any.whl
+
+        deactivate
 
     done
 
