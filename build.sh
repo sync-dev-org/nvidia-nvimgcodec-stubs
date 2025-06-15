@@ -12,7 +12,7 @@ CUDA_VERSIONS=(
 TARGET_VERSIONS=(
     "0.5.0.13"
 )
-POST_VERSION="6"
+POST_VERSION="7"
 
 PY_VERSION="3.12"
 
@@ -48,7 +48,7 @@ for CUDA_VERSION in "${CUDA_VERSIONS[@]}" ; do
         cp ./template/pyproject.toml pyproject.toml
         sed -i "s/PROJECT_NAME/${PROJECT_NAME}/g" ./pyproject.toml
         sed -i "s/version = \"0.0.0.0\"/version = \"${STUBS_VERSION}\"/" ./pyproject.toml
-        sed -i "s/TARGET_NAME==0.0.0.0/${TARGET_NAME}==${TARGET_VERSION}/" ./pyproject.toml
+        sed -i "s/TARGET_NAME>=0.0.0.0/${TARGET_NAME}>=${TARGET_VERSION}/" ./pyproject.toml
 
         cp ./template/README.md README.md
         sed -i "s/0.0.0.0/${TARGET_VERSION}/" ./README.md

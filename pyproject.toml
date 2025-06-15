@@ -1,7 +1,7 @@
 
 [project]
 name = "nvidia-nvimgcodec-cu12-stubs"
-version = "0.5.0.13.5"
+version = "0.5.0.13.7"
 description = "Type stubs for NVIDIA NVIMGCODEC CUDA 12 bindings"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -22,7 +22,7 @@ classifiers = [
     "Typing :: Stubs Only",
 ]
 dependencies = [
-    "nvidia-nvimgcodec-cu12[all]==0.5.0.13",
+    "nvidia-nvimgcodec-cu12[all]>=0.5.0.13",
 ]
 
 [project.optional-dependencies]

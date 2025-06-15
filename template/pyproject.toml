@@ -22,7 +22,7 @@ classifiers = [
     "Typing :: Stubs Only",
 ]
 dependencies = [
-    "TARGET_NAME==0.0.0.0",
+    "TARGET_NAME>=0.0.0.0",
 ]
 
 [project.optional-dependencies]
