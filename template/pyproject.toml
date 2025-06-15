@@ -35,7 +35,7 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/sync-dev-org/nvidia-nvimgcodec-cu12-stubs"
+"Homepage" = "https://github.com/sync-dev-org/nvidia-nvimgcodec-stubs"
 
 [build-system]
 requires = ["hatchling"]
